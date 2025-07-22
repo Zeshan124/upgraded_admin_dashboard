@@ -1,0 +1,1802 @@
+/*
+    Project: qistbazaar - React Admin Template
+    Version: 1.0.0
+    Date Created: 2023-11-15
+    Developed by: Haris
+*/
+
+@import 'utilies/mixin';
+@import 'vendor/media_query';
+@import 'vendor/bourbon/bourbon';
+
+@import 'utilies/settings';
+
+@import 'base/typhography';
+@import 'elements/grid';
+@import 'elements/button';
+@import 'elements/form';
+@import 'elements/pagination';
+@import 'elements/block';
+
+@import 'elements/panel';
+@import 'elements/filter';
+@import 'elements/table';
+@import 'elements/dropdown';
+@import 'elements/loader';
+
+@import 'components/forms';
+@import 'components/section';
+@import 'components/pages';
+@import 'components/menu';
+
+@import 'modules/header';
+@import 'modules/footer';
+
+@import 'elements/helpers';
+
+
+
+
+// Custom CSS:
+@import 'custom/custom';
+
+
+button:disabled{
+    opacity: 0.5;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+.ant-tabs-left>.ant-tabs-nav .ant-tabs-tab{
+    padding: 8px 8px !important;
+}
+.ant-tabs-left>.ant-tabs-content-holder>.ant-tabs-content>.ant-tabs-tabpane{
+
+}
+
+//==========================TABS
+.scrollable-tabs {
+    display: flex;
+    align-items: center;
+}
+
+.tabs-container {
+    overflow-x: auto;
+    display: flex;
+    flex-grow: 1;
+    scrollbar-width: none;
+    /* For Firefox */
+    -ms-overflow-style: none;
+    /* For Internet Explorer and Edge */
+}
+
+.tabs-container::-webkit-scrollbar {
+    display: none;
+    /* For Chrome, Safari, and Opera */
+}
+
+.tabs {
+    display: flex;
+}
+
+.tab {
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.tabs-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.tabs-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    flex-grow: 1;
+    scrollbar-width: none;
+    /* For Firefox */
+    -ms-overflow-style: none;
+    /* For Internet Explorer and Edge */
+}
+
+.tabs-container::-webkit-scrollbar {
+    display: none;
+    /* For Chrome, Safari, and Opera */
+}
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+}
+
+.tab {
+    flex: 0 0 auto;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select:none;
+}
+
+
+//-----------------------------------------------------------------
+.form-control-custom {
+    height: 48px;
+    background: #fff;
+    color: #000;
+    font-size: 16px;
+    border-radius: 5px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.login-wrap {
+    position: relative;
+
+    background: #fff h3 {
+        font-weight: 300;
+    }
+}
+.img {
+    background-size: contain;
+
+}
+
+.wrap {
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 5px;
+
+}
+
+.img,
+.login-wrap {
+   
+        width: 100%;
+    
+}
+
+
+.dash-card h2{
+    font-size: 20px;
+    font-weight: normal;
+}
+.dash-card p {
+    font-size: 13px;
+
+}
+.dash-card .shadow-custom{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+    border-radius: 8px;
+
+}
+
+.dash-card .icon{
+    background: #1369f1;
+    color: #fff;
+    padding-right:10px ;
+    padding-left: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.dash-card .icon{
+    background: #1369f1;
+    color: #fff;
+    padding-right:10px ;
+    padding-left: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .dash-card .col-md-4 {
+            max-width: 32% !important;
+        }
+}
+
+.sticky-date-range {
+    position: fixed;
+        top: 44px;
+        right: 0;
+    width: 100%;
+    
+    background-color: white;
+    /* Ensure it covers the content below */
+    z-index: 10000;
+    /* Ensure it stays above other elements */
+    
+    padding: 5px 0;
+    /* Optional: Add padding for better aesthetics */
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Optional: Add shadow for better visibility */
+}
+.ant-picker-input>input {
+    font-size: 16px !important;
+}
+@media screen and (min-width: 1200px) {
+    .sticky-date-range {
+        top: 0px;
+      
+           
+    }
+    .widthOpenMenu {
+        width: calc(100% - 300px);
+    }
+
+    .widthCloseMenu {
+        width: calc(100% - 80px);
+    }
+}
+.ant-picker-panel-container .ant-picker-panels {
+
+    flex-wrap: wrap !important;
+
+}
+
+@media screen and (max-width: 554px) {
+    .ant-picker-panel-container .ant-picker-panels {
+        width: 280px;
+    
+    }
+    .ant-picker-input>input {
+        font-size: 14px !important;
+    }
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.percentageBar{
+    min-width: 200px;
+}
+.noOfOrders{
+    width: 30px;
+}
+
+@media screen and (max-width: 554px) {
+    .percentageBar {
+            min-width: 150px;
+    }
+}
+.no-scroll {
+    overflow: hidden;
+}
+.daterangepicker{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 568px) {
+    .daterangepicker.mobile {
+            display: flex !important;
+                    flex-wrap: wrap;
+                        width: -moz-fit-content;
+                        width: fit-content;
+                            /* Default width */
+    }
+        .daterangepicker.show-calendar {
+            width: 350px !important;
+         
+        }
+    .daterangepicker .drp-calendar.right {
+
+        margin-left: auto;
+    }
+}
+
+
+.btn-password{
+    position: relative;
+}
+.btn-password div{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+}
+.text-section{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 25px;
+    background-color: #eceff3;
+    padding: 10px;
+    border-radius: 4px;
+
+}
+@media screen and (min-width: 500px) {
+    .text-section {
+        display: none;
+    }
+}
+
+.right-sided{
+    border-left: 1px solid #e6e6e6;
+    max-width: 30%;
+    // min-width: 30%;
+    padding: 20px 0 0px 15px;
+}
+@media screen and (max-width: 768px) {
+    .right-sided {
+        max-width: 100%;
+    }
+}
+@media screen and (min-width: 1680px) {
+    .right-sided {
+        max-width: 400px;
+    }
+}
+
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-body img.rounded {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.list-group-item strong {
+    color: #333;
+}
+
+
+//------------------------
+
+.c-dashboardInfo {
+    margin-bottom: 15px;
+}
+
+.c-dashboardInfo .wrap {
+    background: #ffffff;
+    box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding: 40px 25px 20px;
+    height: 100%;
+}
+
+.c-dashboardInfo__title,
+.c-dashboardInfo__subInfo {
+    color: #6c6c6c;
+    font-size: 1.18em;
+}
+
+.c-dashboardInfo span {
+    display: block;
+}
+
+.c-dashboardInfo__count {
+    font-weight: 600;
+    font-size: 2.5em;
+    line-height: 64px;
+    color: #323c43;
+}
+
+.c-dashboardInfo .wrap:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    content: "";
+}
+
+.c-dashboardInfo:nth-child(1) .wrap:after {
+    background: linear-gradient(82.59deg, #00c48c 0%, #00a173 100%);
+}
+
+.c-dashboardInfo:nth-child(2) .wrap:after {
+    background: linear-gradient(81.67deg, #0084f4 0%, #1a4da2 100%);
+}
+
+.c-dashboardInfo:nth-child(3) .wrap:after {
+    background: linear-gradient(69.83deg, #0084f4 0%, #00c48c 100%);
+}
+
+.c-dashboardInfo:nth-child(4) .wrap:after {
+    background: linear-gradient(81.67deg, #ff647c 0%, #1f5dc5 100%);
+}
+
+.c-dashboardInfo__title svg {
+    color: #d7d7d7;
+    margin-left: 5px;
+}
+
+.MuiSvgIcon-root-19 {
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    font-size: 24px;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select:none;
+    flex-shrink: 0;
+}
+
+
+//---------------------STAT CARD
+
+ .analytics-card {
+     background-color: white;
+     border-radius: 10px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     padding: 15px;
+     width: 100%;
+     
+     text-align: left;
+ }
+.analytics-card-info{
+    border-bottom: 1px solid  #efefef;
+}
+ .analytics-card h1 {
+     margin: 0;
+     font-size: 3rem;
+     font-weight: 700;
+     color: #333;
+ }
+
+ .analytics-card p {
+     margin: 5px 0;
+     font-size: 1.1rem;
+     color: #666;
+ }
+
+ .analytics-badge {
+     display: inline-block;
+     margin-top: 10px;
+     
+     color: white;
+     border-radius: 12px;
+     padding: 5px 10px;
+     font-size: 0.9rem;
+     font-weight: bold;
+        margin-right: 5px;
+ }
+ .diff--badge{
+    display: inline-block;
+        font-size: 1rem;
+            font-weight: bold;
+
+ }
+         .diff--badge--green {
+             color: #28a745;
+         }
+    
+         .diff--badge--red {
+             color: #e9595f;
+         }
+
+ .badge--green{
+        background-color: #28a745;
+ }
+  .badge--red {
+      background-color: #e9595f;
+  }
+ .analytics-card h2{
+    font-size: 1rem;
+
+        color: #666;
+ }
+.loading-dots {
+    display: inline-block;
+
+    letter-spacing: 0.2em;
+}
+
+.loading-dots::after {
+    content: "...";
+    display: inline-block;
+    animation: dots 1.5s infinite steps(4, end);
+}
+
+@keyframes dots {
+    0% {
+        opacity: 0.10;
+    }
+
+    25% {
+        opacity: 0.25;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+ @media screen and (max-width: 568px) {
+    .analytics-card h1 {
+        font-size: 2.2rem;
+    }
+    .analytics-card p {
+        font-size: 1.1rem;
+    }
+    .analytics-card {
+    padding-bottom: 10px;
+    }
+ }
+ .table-produt-row{
+    position: relative;
+    
+ }
+
+.ribbon3-right {
+        width: 80px;
+            height: 22px;
+            line-height: 22px;
+            padding-left: 15px;
+            position: absolute;
+            right: -8px;
+        top: 5px;
+        background: linear-gradient(to bottom, #d9534f 0%, #b52b27 100%);;
+        text-align: left;
+        color: white;
+        font-size: 13px;
+        font-weight: 500;
+}
+
+.ribbon3-right:before,
+.ribbon3-right:after {
+    content: "";
+    position: absolute;
+}
+
+.ribbon3-right:before {
+    height: 0;
+        width: 0;
+        top: -6.5px;
+        right: 0.1px;
+        border-bottom: 7px solid #3a1817;
+        border-right: 9px solid transparent;
+}
+
+.ribbon3-right::after {
+        content: "";
+            position: absolute;
+            left: -9.5px;
+            top: 0;
+            width: 10px;
+            height: 22.4px;
+    background: linear-gradient(to bottom, #d9534f 0%, #b52b27 100%);
+    clip-path: polygon(100% 0, 0 50%, 100% 100%);
+    /* Flip the triangle */
+}
+
+
+
+
+
+/* EXPO CARD*/
+// Variables
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$text-color: #2c3e50;
+$light-color: #ecf0f1;
+$card-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+$border-radius: 8px;
+
+// Card Styling
+.expo-card {
+    background-color: white;
+    border-radius: $border-radius;
+    box-shadow: $card-shadow;
+    border: none;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-header {
+        background: linear-gradient(135deg, $primary-color, darken($primary-color, 15%));
+        color: white;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: none;
+
+        .card-title {
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .date-badge {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .card-footer {
+        background-color: $light-color;
+        border-top: 1px solid rgba(0, 0, 0, 0.05);
+        padding: 12px 20px;
+        display: flex;
+        .heading{
+            font-size: 16px;
+            width: -moz-fit-content;
+            width: fit-content;
+        }
+    }
+}
+
+// Stats Group Styling
+.stats-group {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: $border-radius;
+    margin-bottom: 0px;
+
+    .stats-icon {
+        // width: 50px;
+        min-width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+        font-size: 1.9rem;
+        color: white;
+    }
+
+    .stats-data {
+        flex: 1;
+
+        h6 {
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: $text-color;
+        }
+    }
+
+    .data-row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .data-item {
+        display: flex;
+        flex-direction: column;
+        min-width: 50px;
+    }
+
+    .data-value {
+        font-size: 1.2rem;
+        font-weight: 700;
+        line-height: 1;
+    }
+
+    .data-label {
+        font-size: 0.8rem;
+        color: #7f8c8d;
+        margin-top: 5px;
+    }
+}
+
+// Specific Stats Group Styling
+.delivery-stats {
+    background-color: rgba($primary-color, 0.1);
+
+    .stats-icon {
+        background-color: $primary-color;
+    }
+
+    .data-value {
+        color: $primary-color;
+    }
+}
+
+.booking-stats {
+    background-color: rgba($secondary-color, 0.1);
+
+    .stats-icon {
+        background-color: $secondary-color;
+    }
+
+    .data-value {
+        color: $secondary-color;
+    }
+}
+
+// Total Stats Styling
+.total-stats {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+
+    .total-item {
+        display: flex;
+        align-items: center;
+    }
+
+    .total-label {
+        font-weight: 600;
+        margin-right: 8px;
+        color: $text-color;
+    }
+
+    .total-value {
+        font-weight: 700;
+        font-size: 1.1rem;
+        color: $primary-color;
+    }
+}
+
+// Responsive Adjustments
+@media (max-width: 767px) {
+    .expo-card .card-header {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .date-badge {
+            margin-top: 5px;
+        }
+    }
+
+    .stats-group {
+        margin-bottom: 0px;
+    }
+
+    .total-stats {
+        // flex-direction: column;
+        gap: 10px;
+    }
+    .expo-card .card-footer{
+        align-items: center;
+        flex-direction: column;
+    }
+}
+//p-----------------------uptime
+
+.monitor-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.pulse-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #198754;
+    position: relative;
+}
+
+.pulse-dot:before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: rgba(25, 135, 84, 0.3);
+    top: -4px;
+    left: -4px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.7);
+        opacity: 1;
+    }
+
+    70% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+}
+
+
+//------DATE and things
+//Date range custom picker
+.ga-date-range-picker {
+    display: inline-block;
+}
+
+.ga-date-range-picker .ant-btn {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 4px;
+    font-size: 12px;
+    padding: 0 8px;
+    height: 28px;
+}
+
+.ga-date-range-picker .date-range-text {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.ga-date-range-picker .current-range {
+    font-weight: 500;
+}
+
+.ga-date-range-picker .vs-text {
+    color: #666;
+    font-size: 0.9em;
+    margin: 0 2px;
+}
+
+.ga-date-range-picker .compare-range {
+    color: #52c41a;
+}
+
+
+
+.date-picker-popover {
+    min-width: 250px;
+    max-width: 550px;
+    
+}
+
+.preset-list {
+    height: 100%;
+    padding-right: 0px;
+}
+
+.preset-list h4 {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.preset-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 6px;
+}
+
+.preset-item {
+    padding: 6px 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 12px;
+    transition: all 0.2s;
+    border: 1px solid #f0f0f0;
+}
+
+.preset-item:hover {
+    background-color: #f5f5f5;
+}
+
+.preset-item.active {
+    background-color: #e6f7ff;
+    color: #1890ff;
+    font-weight: 500;
+    border-color: #1890ff;
+}
+
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    row-gap: 0px;
+}
+
+.date-range-display {
+    margin-bottom: 4px;
+}
+
+.date-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 8px;
+}
+
+.panel-select {
+    padding: 6px 8px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    min-width: 120px;
+    flex: 1;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.panel-select.active {
+    border-color: #1890ff;
+    background-color: #e6f7ff;
+}
+
+.panel-title {
+    font-size: 11px;
+    color: #666;
+}
+
+.panel-dates {
+    font-size: 12px;
+    margin-top: 2px;
+    white-space: nowrap;
+}
+
+.compare-toggle {
+    margin-top: 6px;
+    font-size: 12px;
+}
+@media screen and (min-width: 1100px) {
+    .compare-toggle {
+        position: absolute;
+    }
+}
+.compare-options {
+    margin-top: 6px;
+    margin-left: 20px;
+}
+
+.compare-options .ant-radio-wrapper {
+    font-size: 12px;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 6px;
+    margin-top: 12px;
+}
+
+/* Calendar cell styling */
+.date-cell {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.date-cell.selected {
+    background-color: #1890ff;
+    color: white;
+}
+
+.date-cell.selected.start-day {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.date-cell.selected.end-day {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.date-cell.selected.single-day {
+    border-radius: 50%;
+}
+
+.date-cell.selected-compare {
+    background-color: #52c41a;
+    color: white;
+}
+
+.date-cell.selected-compare.start-day {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.date-cell.selected-compare.end-day {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.date-cell.selected-compare.single-day {
+    border-radius: 50%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .preset-grid {
+        display: none !important;
+    }
+
+    .date-range-popover {
+        width: auto;
+        max-width: 550px;
+
+    }
+
+    .date-picker-popover .preset-list {
+        margin-bottom: 16px;
+    }
+
+    .date-picker-popover select {
+        padding: 8px;
+        font-size: 14px;
+        width: 100%;
+        border: 1px solid #d9d9d9;
+        border-radius: 4px;
+    }
+
+    .calendar-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .panel-select {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    .compare-toggle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .action-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 12px;
+    }
+}
+
+/* Optional: Highlighting selected range */
+.date-cell.selected,
+.date-cell.selected-compare {
+    background-color: #1890ff;
+    color: white;
+    border-radius: 0px;
+}
+
+.date-cell.start-day,
+.date-cell.end-day {
+    font-weight: bold;
+}
+
+.date-cell.range-day {
+    background-color: #1890ff;
+}
+
+@media (max-width: 480px) {
+    .ga-date-range-picker .ant-btn {
+        font-size: 11px;
+        padding: 0 6px;
+    }
+
+    .ga-date-range-picker .vs-text {
+        margin: 0 1px;
+    }
+
+    .date-range-popover {
+        width: auto;
+        max-width: 95vw;
+    }
+
+    .preset-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .dash-card .col-md-4 {
+        max-width: 32% !important;
+    }
+}
+
+.sticky-date-range {
+    position: fixed;
+    top: 44px;
+    right: 0;
+    width: 100%;
+
+    background-color: white;
+    /* Ensure it covers the content below */
+    z-index: 10000;
+    /* Ensure it stays above other elements */
+
+    padding: 5px 0;
+    /* Optional: Add padding for better aesthetics */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Optional: Add shadow for better visibility */
+}
+
+.ant-picker-input>input {
+    font-size: 16px !important;
+}
+
+@media screen and (min-width: 1200px) {
+    .sticky-date-range {
+        top: 0px;
+    }
+
+    .widthOpenMenu {
+        width: calc(100% - 300px);
+    }
+
+    .widthCloseMenu {
+        width: calc(100% - 80px);
+    }
+    .ant-picker-calendar-header {
+        padding: 2px 0px 8px !important;
+    }
+}
+
+.ant-picker-panel-container .ant-picker-panels {
+    flex-wrap: wrap !important;
+}
+
+@media screen and (max-width: 554px) {
+    .ant-picker-panel-container .ant-picker-panels {
+        width: 280px;
+    }
+
+    .ant-picker-input>input {
+        font-size: 14px !important;
+    }
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.percentageBar {
+    min-width: 200px;
+}
+
+.noOfOrders {
+    width: 30px;
+}
+
+@media screen and (max-width: 554px) {
+    .percentageBar {
+        min-width: 150px;
+    }
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.daterangepicker {
+    display: none;
+}
+
+@media screen and (max-width: 568px) {
+    .daterangepicker.mobile {
+        display: flex !important;
+        flex-wrap: wrap;
+        width: -moz-fit-content;
+        width: fit-content;
+        /* Default width */
+    }
+
+    .daterangepicker.show-calendar {
+        width: 350px !important;
+    }
+
+    .daterangepicker .drp-calendar.right {
+        margin-left: auto;
+    }
+}
+
+
+
+//-------
+
+
+//CARD
+
+
+// Stat previous values styling
+.stat-prev-container {
+    margin-top: 6px;
+
+    .stat-previous {
+        display: flex;
+        align-items: center;
+        background: rgba(245, 245, 250, 0.8);
+        padding: 4px 8px;
+        border-radius: 4px;
+        width: fit-content;
+        width: -moz-fit-content;
+        .prev-label {
+            color: #666;
+            font-size: 12px;
+            margin-right: 5px;
+        }
+
+        .prev-values {
+            font-weight: 700;
+            font-size: 18px;
+            color: #444;
+        }
+    }
+}
+
+// Media queries
+@media (max-width: 480px) {
+    .stat-prev-container {
+        .stat-previous {
+            .prev-value {
+                font-weight: 700;
+                font-size: 1.5rem;
+                color: #444;
+            }
+        }
+    }
+}
+
+///--------------------------
+/// /////////stat card css
+.prev-value-container {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    background: rgba(245, 245, 250, 0.7);
+    padding: 4px 8px;
+    border-radius: 4px;
+    border-left: 3px solid #6366f1;
+}
+
+.prev-label {
+    color: #666;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.prev-values {
+    font-weight: 700;
+    font-size: 18px;
+    color: #444;
+}
+//CITY CARD
+// CardCitySales.scss
+.city-sales-card {
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+    border-radius: 4px;
+}
+
+.city-sales-card .card-header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.city-sales-card .card-title {
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+.city-sales-card .ant-card-body{
+    padding: 0 !important;
+}
+
+.city-sales-card .info-icon {
+    margin-left: 8px;
+    color: #8c8c8c;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.city-sales-card .info-icon:hover {
+    color: #1890ff;
+}
+
+.city-sales-card .view-toggle {
+    display: flex;
+    align-items: center;
+}
+
+.city-sales-card .toggle-option {
+    padding: 4px 8px;
+    cursor: pointer;
+    font-size: 13px;
+    border-radius: 4px;
+    margin-left: 8px;
+    color: #595959;
+}
+
+.city-sales-card .toggle-option:hover {
+    background-color: #f5f5f5;
+}
+
+.city-sales-card .toggle-option.active {
+    color: #1890ff;
+    background-color: #e6f7ff;
+}
+
+.city-sales-card .error-container {
+    text-align: center;
+    padding: 20px;
+    color: #ff4d4f;
+}
+
+.city-sales-card .chart-container {
+    padding: 12px 0;
+}
+
+.city-sales-card .city-progress-row {
+    margin-bottom: 16px;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.city-sales-card .city-progress-row:hover {
+    background-color: #f0f7ff;
+}
+
+.city-sales-card .city-progress-row.selected {
+    background-color: #e6f7ff;
+    border-left: 3px solid #108ee9;
+}
+
+.city-sales-card .city-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+.city-sales-card .city-name {
+    font-size: 13px;
+    color: #262626;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70%;
+}
+
+.city-sales-card .location-icon {
+    color: #108ee9;
+    margin-right: 6px;
+}
+
+.city-sales-card .city-count {
+    font-size: 13px;
+    font-weight: 600;
+    color: #262626;
+}
+
+.city-sales-card .city-stats {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px dashed #d9d9d9;
+    margin-top: 16px;
+    padding-top: 16px;
+}
+
+.city-sales-card .stat-item {
+    text-align: center;
+    flex: 1;
+}
+
+.city-sales-card .stat-item:first-child {
+    border-right: 1px solid #f0f0f0;
+}
+
+.city-sales-card .stat-label {
+    display: block;
+    font-size: 12px;
+    color: #8c8c8c;
+    margin-bottom: 4px;
+}
+
+.city-sales-card .stat-value {
+    font-size: 18px;
+    font-weight: 700;
+    color: #262626;
+}
+
+.city-sales-card .show-toggle {
+    text-align: center;
+    margin-top: 12px;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 12px;
+}
+
+.city-sales-card .table-container .ant-table-row {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.city-sales-card .table-container .ant-table-row:hover {
+    background-color: #f0f7ff;
+}
+
+.city-sales-card .table-container .ant-table-row.selected-row {
+    background-color: #e6f7ff;
+}
+
+.city-sales-card .city-table .account-info {
+    display: flex;
+    align-items: center;
+}
+
+.city-sales-card .city-table .account-info .account-count {
+    font-weight: 600;
+}
+
+@media (max-width: 576px) {
+    .city-sales-card .card-header-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .city-sales-card .view-toggle {
+        margin-top: 8px;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .city-sales-card .city-progress-row .city-info .city-name {
+        max-width: 60%;
+    }
+}
+//card branch sales
+// CardBranchSales.scss
+.branch-sales-card {
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+    border-radius: 4px;
+}
+.branch-sales-card .ant-card-body{
+    padding: 0 !important;
+}
+
+
+
+/* Target the summary rows at the bottom */
+.branch-table.ant-table-small .ant-table-summary>tr>td,
+.branch-table .ant-table-small .ant-table-summary>tr>td {
+    padding: 12px 4px !important;
+}
+
+.branch-sales-card .card-header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.branch-sales-card .card-title {
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.branch-sales-card .info-icon {
+    margin-left: 8px;
+    color: #8c8c8c;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.branch-sales-card .info-icon:hover {
+    color: #1890ff;
+}
+
+.branch-sales-card .view-toggle {
+    display: flex;
+    align-items: center;
+}
+
+.branch-sales-card .toggle-option {
+    padding: 4px 8px;
+    cursor: pointer;
+    font-size: 13px;
+    border-radius: 4px;
+    margin-left: 8px;
+    color: #595959;
+}
+
+.branch-sales-card .toggle-option:hover {
+    background-color: #f5f5f5;
+}
+
+.branch-sales-card .toggle-option.active {
+    color: #1890ff;
+    background-color: #e6f7ff;
+}
+
+.branch-sales-card .error-container {
+    text-align: center;
+    padding: 20px;
+    color: #ff4d4f;
+}
+
+.branch-sales-card .chart-container {
+    padding: 12px 0;
+}
+
+.branch-sales-card .branch-progress-row {
+    margin-bottom: 16px;
+}
+
+.branch-sales-card .branch-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+.branch-sales-card .branch-name {
+    font-size: 13px;
+    color: #262626;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70%;
+}
+
+.branch-sales-card .branch-icon {
+    color: #1890ff;
+    margin-right: 6px;
+}
+
+.branch-sales-card .branch-count {
+    font-size: 13px;
+    font-weight: 600;
+    color: #262626;
+}
+
+.branch-sales-card .branch-stats {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px dashed #d9d9d9;
+    margin-top: 16px;
+    padding-top: 16px;
+}
+
+.branch-sales-card .stat-item {
+    text-align: center;
+    flex: 1;
+}
+
+.branch-sales-card .stat-item:first-child {
+    border-right: 1px solid #f0f0f0;
+}
+
+.branch-sales-card .stat-label {
+    display: block;
+    font-size: 12px;
+    color: #8c8c8c;
+    margin-bottom: 4px;
+}
+
+.branch-sales-card .stat-value {
+    font-size: 18px;
+    font-weight: 700;
+    color: #262626;
+}
+
+.branch-sales-card .more-info {
+    text-align: center;
+    font-size: 12px;
+    color: #8c8c8c;
+    margin-top: 12px;
+}
+
+.branch-sales-card .branch-table .branch-info {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .branch-sales-card .branch-table .branch-info {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .branch-sales-card .branch-table .branch-info .branch-code {
+        margin-top: 0;
+    }
+}
+
+.branch-sales-card .branch-table .branch-info .branch-name {
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.branch-sales-card .branch-table .branch-info .branch-code {
+    margin-top: 4px;
+}
+
+.branch-sales-card .branch-table .account-info {
+    display: flex;
+    align-items: center;
+}
+
+.branch-sales-card .branch-table .account-info .account-count {
+    font-weight: 600;
+    margin-right: 4px;
+}
+
+.branch-sales-card .branch-table .account-info .account-percent {
+    font-size: 12px;
+    color: #8c8c8c;
+}
+
+@media (max-width: 576px) {
+    .branch-sales-card .ant-card-head {
+        padding: 0 12px;
+    }
+
+    .branch-sales-card .ant-card-head-wrapper {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .branch-sales-card .ant-card-head-title {
+        padding: 12px 0 4px;
+    }
+
+    .branch-sales-card .ant-card-extra {
+        margin-left: 0;
+        padding: 0 0 12px;
+    }
+
+    .branch-sales-card .card-header-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .branch-sales-card .view-toggle {
+        margin-top: 8px;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .branch-sales-card .branch-progress-row .branch-info .branch-name {
+        max-width: 60%;
+    }
+}
+
+
+
+.date-range-picker{
+    height: 35px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+
+}
+.compare-icon-container{
+    padding: 8px;
+}
+@media screen and (max-width:576px) {
+    .date-range-picker {
+            
+            padding: 5px;
+             
+    }
+    .date-range-picker .date-text{
+        font-size: 12px;
+        white-space: nowrap;
+    }
+    .date-range-picker .date-icon{
+        display: none;
+    };
+    .compare-icon-container {
+        padding: 4px;   
+    }
+    .compare-icon-container i{
+        font-size: 12px;
+    }
+}
+
+
+// 7. CSS for currency toggle (add to your CSS file)
+.currency-toggle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.currency-toggle {
+  display: flex;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  overflow: hidden;
+  background: white;
+}
+
+.currency-btn {
+  padding: 6px 12px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+  color: #666;
+}
+
+.currency-btn:hover {
+  background: #f5f5f5;
+}
+
+.currency-btn.active {
+  background: #1890ff;
+  color: white;
+}
+
+.currency-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.exchange-rate-display {
+  color: #666;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+//----------------------------------------------------
+
+
+.dashboardTitle {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+// Responsive breakpoints
+@media (max-width: 576px) {
+
+  
+  .dashboardTitle {
+    font-size: 0.625rem;
+  }
+}

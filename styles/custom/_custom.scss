@@ -1,0 +1,29 @@
+/* Custom CSS */
+.custom-dropdown .ant-select-dropdown {
+    width: 250px;
+    /* Set your desired fixed width */
+}
+.prevent-select {
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+
+.tableColorSubCat {
+    background-color: #fbfbfb;
+}
+
+
+
+.description-short {
+    max-height: 100px;
+    /* Adjust this value based on your needs */
+    overflow: hidden;
+}
+
+.description-full {
+    max-height: none;
+}

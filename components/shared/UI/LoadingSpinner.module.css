@@ -1,0 +1,42 @@
+.spinnerContainer{
+    height: 100vh;
+  display: flex; /* Set display to flex */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.spinner {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100px;
+  height: 100px;
+}
+.spinner:after {
+  content: " ";
+  display: block;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+
+  border: 6px solid rgb(210, 172, 71);
+  border-color: linear-gradient(
+    90deg,
+    #cd4040 0%,
+    #1531a4 100%
+  );
+  border-color: #1531a4 transparent #cd4040
+    transparent;
+  animation: spinner 1.2s linear infinite;
+}
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
