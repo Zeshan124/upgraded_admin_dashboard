@@ -10,7 +10,7 @@ import LoadingSpinner from '../UI/LoadingSpinner';
 import DropdownAction from '~/components/elements/basic/DropdownAction';
 import ModuleCouponDetailedView from '~/components/partials/coupon/ModuleCouponDetailedView';
 
-const TableCouponItems = ({ coupon: initialCoupon }) => {
+const TableCouponItems = ({ coupon: initialCoupon = [] }) => {
     const router = useRouter();
     const { data: couponData, error, isLoading, mutate } = useSWR('/coupon/get', getAllCoupons, {
         initialData: initialCoupon,
@@ -113,20 +113,20 @@ const TableCouponItems = ({ coupon: initialCoupon }) => {
 
 export default TableCouponItems;
 
-export async function getServerSideProps() {
-    try {
-        const couponData = await getAllCoupons();
-        return {
-            props: {
-                coupon: couponData,
-            },
-        };
-    } catch (error) {
-        console.error('Error fetching data:', error);
-        return {
-            props: {
-                coupon: [],
-            },
-        };
-    }
-}
+// export async function getServerSideProps() {
+//     try {
+//         const couponData = await getAllCoupons();
+//         return {
+//             props: {
+//                 coupon: couponData,
+//             },
+//         };
+//     } catch (error) {
+//         console.error('Error fetching data:', error);
+//         return {
+//             props: {
+//                 coupon: [],
+//             },
+//         };
+//     }
+// }

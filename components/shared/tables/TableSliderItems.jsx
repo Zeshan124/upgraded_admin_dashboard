@@ -11,7 +11,7 @@ import FormUpdateSlider from '../forms/Edit/FormUpdateSlider';
 
 const errorImage = "https://via.placeholder.com/150";
 
-const TableSliderItems = ({ slider: initialSlider }) => {
+const TableSliderItems = ({ slider: initialSlider=[] }) => {
     const { showSuccess, showError, contextHolder } = useMessageHandler();
 
     const [isModalVisible, setIsModalVisible] = useState(false);
@@ -144,22 +144,22 @@ const TableSliderItems = ({ slider: initialSlider }) => {
     );
 };
 
-export async function getServerSideProps() {
-    try {
-        const sliderData = await fetchSliders();
-        return {
-            props: {
-                slider: sliderData,
-            },
-        };
-    } catch (error) {
-        console.error('Error fetching data:', error);
-        return {
-            props: {
-                slider: [],
-            },
-        };
-    }
-}
+// export async function getServerSideProps() {
+//     try {
+//         const sliderData = await fetchSliders();
+//         return {
+//             props: {
+//                 slider: sliderData,
+//             },
+//         };
+//     } catch (error) {
+//         console.error('Error fetching data:', error);
+//         return {
+//             props: {
+//                 slider: [],
+//             },
+//         };
+//     }
+// }
 
 export default TableSliderItems;

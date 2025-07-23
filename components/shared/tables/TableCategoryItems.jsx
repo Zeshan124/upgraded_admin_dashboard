@@ -13,7 +13,7 @@ import ErrorBoundary from "~/components/utils/ErrorBoundary";
 import FormEditCateogry from "../forms/Edit/FormEditCateogry";
 
 
-const TableCategoryItems = ({ category: initialCategory, subCategory: initialSubcategory }) => {
+const TableCategoryItems = ({ category: initialCategory=[], subCategory: initialSubcategory=[] }) => {
 
     const [isModalVisible, setIsModalVisible] = useState(false);
     const [selectedItem, setSelectedItem] = useState();
@@ -271,23 +271,23 @@ const TableCategoryItems = ({ category: initialCategory, subCategory: initialSub
 
 export default TableCategoryItems;
 
-export async function getServerSideProps() {
-    try {
-        const categoryData = await fetchAllCategories();
-        const subCategory = await fetchAllSubCategories();
-        return {
-            props: {
-                category: categoryData,
-                subCategory: subCategory
-            },
-        };
-    } catch (error) {
-        console.error('Error fetching data:', error);
-        return {
-            props: {
-                category: [],
-                subCategory: []
-            },
-        };
-    }
-}
+// export async function getServerSideProps() {
+//     try {
+//         const categoryData = await fetchAllCategories();
+//         const subCategory = await fetchAllSubCategories();
+//         return {
+//             props: {
+//                 category: categoryData,
+//                 subCategory: subCategory
+//             },
+//         };
+//     } catch (error) {
+//         console.error('Error fetching data:', error);
+//         return {
+//             props: {
+//                 category: [],
+//                 subCategory: []
+//             },
+//         };
+//     }
+// }
