@@ -24,8 +24,6 @@ import useProducts from "~/components/hooks/useProducts";
 import Editor from "~/components/shared/UI/Editor";
 import { getImageURL } from "~/util";
 import ErrorBoundary from "~/components/utils/ErrorBoundary";
-import axios from "axios";
-import { route } from "next/dist/next-server/server/router";
 import LoadingSpinner from "~/components/shared/UI/LoadingSpinner";
 import { SapItemLookup } from "~/api/OMSService";
 import SearchItemCode from "~/components/partials/products/SearchItemCode";
