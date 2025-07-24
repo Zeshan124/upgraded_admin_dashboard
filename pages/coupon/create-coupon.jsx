@@ -414,26 +414,26 @@ const CreateCoupon = ({ product: initialProduct, category: initialCategory }) =>
 };
 
 export default connect((state) => state.app)(CreateCoupon);
-export async function getStaticProps() {
-    try {
-        const productData = await fetchAllProducts();
-        const categoryData = await fetchAllCategories();
-        // const subCategory = await fetchAllSubCategories();
-        return {
-            props: {
-                product: productData,
-                category: categoryData,
-                // subCategory: subCategory
-            },
-        };
-    } catch (error) {
-        console.error('Error fetching data:', error);
-        return {
-            props: {
-                product: [],
-                category: [],
-                // subCategory: []
-            },
-        };
-    }
-}
+// export async function getStaticProps() {
+//     try {
+//         const productData = await fetchAllProducts();
+//         const categoryData = await fetchAllCategories();
+//         // const subCategory = await fetchAllSubCategories();
+//         return {
+//             props: {
+//                 product: productData,
+//                 category: categoryData,
+//                 // subCategory: subCategory
+//             },
+//         };
+//     } catch (error) {
+//         console.error('Error fetching data:', error);
+//         return {
+//             props: {
+//                 product: [],
+//                 category: [],
+//                 // subCategory: []
+//             },
+//         };
+//     }
+// }

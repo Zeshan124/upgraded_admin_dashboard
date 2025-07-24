@@ -502,23 +502,23 @@ const CreateProductPage = ({ category: initialCategory, subCategory: initialSubc
 };
 export default connect((state) => state.app)(CreateProductPage);
 
-export async function getStaticProps() {
-  try {
-    const categoryData = await fetchAllCategories();
-    const subCategory = await fetchAllSubCategories();
-    return {
-      props: {
-        category: categoryData,
-        subCategory: subCategory
-      },
-    };
-  } catch (error) {
-    console.error('Error fetching data:', error);
-    return {
-      props: {
-        category: [],
-        subCategory: []
-      },
-    };
-  }
-}
+// export async function getStaticProps() {
+//   try {
+//     const categoryData = await fetchAllCategories();
+//     const subCategory = await fetchAllSubCategories();
+//     return {
+//       props: {
+//         category: categoryData,
+//         subCategory: subCategory
+//       },
+//     };
+//   } catch (error) {
+//     console.error('Error fetching data:', error);
+//     return {
+//       props: {
+//         category: [],
+//         subCategory: []
+//       },
+//     };
+//   }
+// }

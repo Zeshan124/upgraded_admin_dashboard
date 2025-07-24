@@ -135,29 +135,29 @@ const OrdersPage = ({ orders: initialOrder }) => {
 };
 
 
-export async function getStaticProps() {
-  try {
-    const ordersData = await getAllOrdersPaginate(1, 15);
-    // Check if ordersData is undefined or if ordersData.data is undefined
-    if (!ordersData || !ordersData.data) {
-      // Return null or an empty array to ensure all values are serializable
-      return { props: { orders: [] } }; // Using an empty array for consistency
-    }
-    return {
-      props: {
-        orders: ordersData.data,
-      },
-      revalidate: 1, // Consider adding this if your data updates periodically
-    };
-  } catch (error) {
-    console.error('Error fetching data:', error);
-    return {
-      props: {
-        orders: [],
-      },
-    };
-  }
-}
+// export async function getStaticProps() {
+//   try {
+//     const ordersData = await getAllOrdersPaginate(1, 15);
+//     // Check if ordersData is undefined or if ordersData.data is undefined
+//     if (!ordersData || !ordersData.data) {
+//       // Return null or an empty array to ensure all values are serializable
+//       return { props: { orders: [] } }; // Using an empty array for consistency
+//     }
+//     return {
+//       props: {
+//         orders: ordersData.data,
+//       },
+//       revalidate: 1, // Consider adding this if your data updates periodically
+//     };
+//   } catch (error) {
+//     console.error('Error fetching data:', error);
+//     return {
+//       props: {
+//         orders: [],
+//       },
+//     };
+//   }
+// }
 
 
 export default connect((state) => state.app)(OrdersPage);
