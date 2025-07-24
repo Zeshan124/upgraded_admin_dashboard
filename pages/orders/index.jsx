@@ -16,7 +16,7 @@ import FormExportOrder from "~/components/shared/forms/FormExportOrder";
 
 
 const { Option } = Select;
-const OrdersPage = ({ orders: initialOrder }) => {
+const OrdersPage = ({ orders: initialOrder=[] }) => {
   const itemsPerPage = 15;
   const [pageIndex, setPageIndex] = useState(1);
   const [error, setError] = useState(null);

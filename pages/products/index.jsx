@@ -23,7 +23,7 @@ import useSWR from "swr";
 
 
 const { Option } = Select;
-const ProductPage = ({ category: initialCategory, product: initialProduct }) => {
+const ProductPage = ({ category: initialCategory=[], product: initialProduct=[] }) => {
   const itemsPerPage = 15;  
   const [pageIndex, setPageIndex] = useState(1);
   

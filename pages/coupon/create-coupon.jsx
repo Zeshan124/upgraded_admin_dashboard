@@ -27,7 +27,7 @@ const { RangePicker } = DatePicker;
 
 
 
-const CreateCoupon = ({ product: initialProduct, category: initialCategory }) => {
+const CreateCoupon = ({ product: initialProduct=[], category: initialCategory=[] }) => {
     const { productData,
         errorProduct: error,
         isLoadingProduct: isLoading,

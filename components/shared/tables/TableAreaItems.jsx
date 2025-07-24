@@ -55,7 +55,7 @@ const EditAreaModal = ({ selectedItem, isEditModalVisible, handleOk, handleCance
 
 
 //Main
-const TableAreaItems = ({ initialAreas, cityData, selectedCity }) => {
+const TableAreaItems = ({ initialAreas=[], cityData=[], selectedCity }) => {
     const { data: areas, error: areaDataError, isLoading: isLoadingAreaData, mutate } = useSWR(
         '/areas/get',
         fetchAllAreas,
@@ -160,20 +160,20 @@ const TableAreaItems = ({ initialAreas, cityData, selectedCity }) => {
 };
 
 export default TableAreaItems
-export async function getStaticProps() {
-    try {
-        const areasData = await fetchAllAreas();
-        return {
-            props: {
-                areas: areasData,
-            },
-        };
-    } catch (error) {
-        console.error('Error fetching data:', error);
-        return {
-            props: {
-                areas: [],
-            },
-        };
-    }
-}
+// export async function getStaticProps() {
+//     try {
+//         const areasData = await fetchAllAreas();
+//         return {
+//             props: {
+//                 areas: areasData,
+//             },
+//         };
+//     } catch (error) {
+//         console.error('Error fetching data:', error);
+//         return {
+//             props: {
+//                 areas: [],
+//             },
+//         };
+//     }
+// }

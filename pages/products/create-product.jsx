@@ -27,7 +27,7 @@ const { Option } = Select;
 import {slugify} from '~/util';
 import SearchItemCode from "~/components/partials/products/SearchItemCode";
 
-const CreateProductPage = ({ category: initialCategory, subCategory: initialSubcategory }) => {
+const CreateProductPage = ({ category: initialCategory=[], subCategory: initialSubcategory=[] }) => {
   const router = useRouter();
 
   const { categoryData, categoryError, categoryLoading } = useCategories(initialCategory);
