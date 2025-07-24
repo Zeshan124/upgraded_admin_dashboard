@@ -20,7 +20,6 @@ const CategoriesPage = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(toggleDrawerMenu(false));
-
   }, []);
 
   return (
@@ -31,23 +30,23 @@ const CategoriesPage = () => {
       />
       <ErrorBoundary>
         <div className="d-flex justify-content-end">
-          <button className={`ml-auto ps-btn ${addCategory ? 'ps-btn--gray' : 'success'} px-4 mb-3 mb-md-0`} style={{ fontSize:'1.3rem'}} onClick={()=>setAddCategory((prev)=>(!prev))}>
-           {addCategory && 'Hide'} Add Category
+          <button
+            className={`ml-auto ps-btn ${addCategory ? "ps-btn--gray" : "success"} px-4 mb-3 mb-md-0`}
+            style={{ fontSize: "1.3rem" }}
+            onClick={() => setAddCategory((prev) => !prev)}
+          >
+            {addCategory && "Hide"} Add Category
           </button>
         </div>
         <section className="ps-dashboard ps-items-listing">
-
-
           <div className="ps-section__left">
             <div className="ps-section__header ml-auto">
               {/* <div className="pl-2">
                 <FormSearchSimple />
               </div> */}
-
             </div>
 
             <div className="ps-section__content">
-
               <TableCategoryItems />
               {/* <div className="ps-section__footer">
                 <p>Show 5 in 30 items.</p>
@@ -55,9 +54,11 @@ const CategoriesPage = () => {
               </div> */}
             </div>
           </div>
-          {addCategory && <div className="right-sided">
-            <FormCreateCategory />
-          </div>}
+          {addCategory && (
+            <div className="right-sided">
+              <FormCreateCategory />
+            </div>
+          )}
         </section>
       </ErrorBoundary>
     </ContainerDefault>

@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
-import useSWR from 'swr';
+import useSWR from "swr";
 import { connect, useDispatch } from "react-redux";
 import { toggleDrawerMenu } from "~/store/app/action";
 import { Select } from "antd";
-
 
 import ContainerDefault from "~/components/layouts/ContainerDefault";
 import Pagination from "~/components/elements/basic/Pagination";
@@ -22,27 +21,21 @@ import LoadingSpinner from "~/components/shared/UI/LoadingSpinner";
 const { Option } = Select;
 
 const CityAreaPage = ({ cities: initialCities }) => {
-
-  const { data: cities, error: cityDataError, isLoading: isLoadingCityData, mutate } = useSWR(
-    '/cities/get',
-    fetchCities,
-    { initialData: initialCities }
+  const {
+    data: cities,
+    error: cityDataError,
+    isLoading: isLoadingCityData,
+    mutate,
+  } = useSWR("/cities/get", fetchCities, { initialData: initialCities });
+  const [selectedCity, setSelectedCity] = useState(
+    initialCities[0]?.cityID || null
   );
-  const [selectedCity, setSelectedCity] = useState(initialCities[0]?.cityID || null);
-
-
 
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(toggleDrawerMenu(false));
-
   }, []);
-
-
-
-
-
 
   const handleCityChange = (value) => {
     setSelectedCity(value);
@@ -106,7 +99,7 @@ export async function getStaticProps() {
       },
     };
   } catch (error) {
-    console.error('Error fetching data:', error);
+    console.error("Error fetching data:", error);
     return {
       props: {
         cities: [],
