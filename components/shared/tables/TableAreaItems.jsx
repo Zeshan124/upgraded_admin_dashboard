@@ -160,20 +160,20 @@ const TableAreaItems = ({ initialAreas, cityData, selectedCity }) => {
 };
 
 export default TableAreaItems
-// export async function getStaticProps() {
-//     try {
-//         const areasData = await fetchAllAreas();
-//         return {
-//             props: {
-//                 areas: areasData,
-//             },
-//         };
-//     } catch (error) {
-//         console.error('Error fetching data:', error);
-//         return {
-//             props: {
-//                 areas: [],
-//             },
-//         };
-//     }
-// }
+export async function getStaticProps() {
+    try {
+        const areasData = await fetchAllAreas();
+        return {
+            props: {
+                areas: areasData,
+            },
+        };
+    } catch (error) {
+        console.error('Error fetching data:', error);
+        return {
+            props: {
+                areas: [],
+            },
+        };
+    }
+}

@@ -90,22 +90,22 @@ const CityAreaPage = ({ cities: initialCities }) => {
   );
 };
 
-// export async function getStaticProps() {
-//   try {
-//     const citiesData = await fetchCities();
-//     return {
-//       props: {
-//         cities: citiesData,
-//       },
-//     };
-//   } catch (error) {
-//     console.error("Error fetching data:", error);
-//     return {
-//       props: {
-//         cities: [],
-//       },
-//     };
-//   }
-// }
+export async function getStaticProps() {
+  try {
+    const citiesData = await fetchCities();
+    return {
+      props: {
+        cities: citiesData,
+      },
+    };
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    return {
+      props: {
+        cities: [],
+      },
+    };
+  }
+}
 
 export default connect((state) => state.app)(CityAreaPage);

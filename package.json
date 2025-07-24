@@ -8,6 +8,7 @@
     "build": "next build",
     "start": "next start -p 3002",
     "lint": "next lint"
+    
   },
   "dependencies": {
     "@ant-design/icons": "^5.5.1",
