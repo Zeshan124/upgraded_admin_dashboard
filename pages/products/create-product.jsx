@@ -16,9 +16,9 @@ import ContainerDefault from "~/components/layouts/ContainerDefault";
 import HeaderDashboard from "~/components/shared/headers/HeaderDashboard";
 
 
-import { fetchAllCategories } from "~/api/categoryService";
-import { fetchAllSubCategories } from "~/api/subCategoryService";
-import { addProduct } from "~/api/productService";
+import { fetchAllCategories } from "~/services/categoryService";
+import { fetchAllSubCategories } from "~/services/subCategoryService";
+import { addProduct } from "~/services/productService";
 import useCategories from "~/components/hooks/useCategories";
 import useSubCategories from "~/components/hooks/useSubCategories";
 import Editor from "~/components/shared/UI/Editor";

@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, Table, Tooltip, Empty } from 'antd';
 import { EnvironmentOutlined, InfoCircleOutlined} from '@ant-design/icons';
 import useSWR from 'swr';
-import { fetchCitySalesSap } from '~/api/OMSService';
+import { fetchCitySalesSap } from '~/services/OMSService';
 import { convertValue, formatCurrency, getCurrencySymbol, SWROnceFetchSetting } from '~/util';
 import ChangeInValuesPercent from '~/components/elements/basic/ChangeInValuesPercent';
 import { useSelector } from 'react-redux';

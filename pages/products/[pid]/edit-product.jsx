@@ -15,9 +15,9 @@ import ContainerDefault from "~/components/layouts/ContainerDefault";
 import HeaderDashboard from "~/components/shared/headers/HeaderDashboard";
 
 import useSWR from "swr";
-import { getProductById, updateProduct } from "~/api/productService";
-import { fetchAllCategories } from "~/api/categoryService";
-import { fetchAllSubCategories } from "~/api/subCategoryService";
+import { getProductById, updateProduct } from "~/services/productService";
+import { fetchAllCategories } from "~/services/categoryService";
+import { fetchAllSubCategories } from "~/services/subCategoryService";
 import useCategories from "~/components/hooks/useCategories";
 import useSubCategories from "~/components/hooks/useSubCategories";
 import useProducts from "~/components/hooks/useProducts";
@@ -25,7 +25,7 @@ import Editor from "~/components/shared/UI/Editor";
 import { getImageURL } from "~/util";
 import ErrorBoundary from "~/components/utils/ErrorBoundary";
 import LoadingSpinner from "~/components/shared/UI/LoadingSpinner";
-import { SapItemLookup } from "~/api/OMSService";
+import { SapItemLookup } from "~/services/OMSService";
 import SearchItemCode from "~/components/partials/products/SearchItemCode";
 
 

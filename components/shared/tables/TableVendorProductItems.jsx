@@ -7,8 +7,8 @@ import { formatDate, getImageURL, placeHolderImage, toTitleCase } from "~/util";
 import useMessageHandler from "~/components/hooks/useMessageHandler";
 import ErrorBoundary from "~/components/utils/ErrorBoundary";
 import DeleteButton from "../UI/DeleteButton";
-import { deleteStore, updateStoreProductStatus } from "~/api/storeService";
-import { deleteProduct } from "~/api/productService";
+import { deleteStore, updateStoreProductStatus } from "~/services/storeService";
+import { deleteProduct } from "~/services/productService";
 
 const onImageError = (e) => {
     e.target.src = placeHolderImage

@@ -1,5 +1,5 @@
 import useSWR from 'swr';
-import { fetchAllProducts } from '~/api/productService';
+import { fetchAllProducts } from '~/services/productService';
 
 function useProducts(initialProduct=[]) {
     const { data: productData, error: errorProduct, isLoading: isLoadingProduct, mutate: mutateProduct } = useSWR('/all-products',

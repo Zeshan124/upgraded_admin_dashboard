@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { Controller, useForm } from 'react-hook-form';
 import { PlusOutlined } from '@ant-design/icons';
 import { Modal, Upload, message } from 'antd';
-import { UpdateSlider, addSlider } from '~/api/sliderService';
+import { UpdateSlider, addSlider } from '~/services/sliderService';
 import useMessageHandler from '~/components/hooks/useMessageHandler';
-import { fetchSliders } from '~/api/sliderService';
+import { fetchSliders } from '~/services/sliderService';
 import useSWR from 'swr';
 
 const FormUpdateSlider = ({ data:items, onCancel, mutate }) => {

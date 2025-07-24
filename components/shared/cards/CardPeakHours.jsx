@@ -1,7 +1,7 @@
 import { Alert, Progress, Table, Collapse } from 'antd';
 import React, { useMemo } from 'react';
 import useSWR from 'swr';
-import { peakHours } from '~/api/analyticsService';
+import { peakHours } from '~/services/analyticsService';
 
 const { Panel } = Collapse;
 

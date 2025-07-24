@@ -20,7 +20,7 @@ import {
   ClockCircleOutlined,
   HistoryOutlined,
 } from "@ant-design/icons";
-import { getMonitors } from "~/api/uptimeServices";
+import { getMonitors } from "~/services/uptimeServices";
 import useSWR from "swr";
 
 const { Title, Text } = Typography;

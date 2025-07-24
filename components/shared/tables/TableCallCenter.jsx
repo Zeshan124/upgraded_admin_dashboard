@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { Table } from 'antd';
 import useSWR from 'swr';
-import { CallCenterOrders } from '~/api/analyticsService';
+import { CallCenterOrders } from '~/services/analyticsService';
 import { SWROnceFetchSetting } from '~/util';
 import ChangeInValuesPercent from '~/components/elements/basic/ChangeInValuesPercent';
 

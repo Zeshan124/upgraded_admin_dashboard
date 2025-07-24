@@ -9,9 +9,9 @@ import { connect, useDispatch } from "react-redux";
 import { toggleDrawerMenu } from "~/store/app/action";
 import { Select } from "antd";
 import useSWR from "swr";
-import { fetchAllCategories } from "~/api/categoryService";
+import { fetchAllCategories } from "~/services/categoryService";
 import { toTitleCase } from "~/util";
-import { fetchAllSubCategories } from "~/api/subCategoryService";
+import { fetchAllSubCategories } from "~/services/subCategoryService";
 import ErrorBoundary from "~/components/utils/ErrorBoundary";
 const { Option } = Select;
 

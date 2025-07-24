@@ -14,7 +14,7 @@ import LoadingSpinner from "~/components/shared/UI/LoadingSpinner";
 import moment from "moment";
 import DateRangePicker from "~/components/elements/basic/DateRangePicker";
 import { serializeQuery } from "~/repositories/Repository";
-import {  getAllStores, getStoreOrders } from "~/api/storeService";
+import {  getAllStores, getStoreOrders } from "~/services/storeService";
 import useSWR from "swr";
 import TableStoreOrdersItems from "~/components/shared/tables/TableStoreOrdersItems";
 import { toTitleCase } from "~/util";

@@ -17,7 +17,7 @@ import { status, toTitleCase } from "~/util";
 
 import ErrorBoundary from "~/components/utils/ErrorBoundary";
 import LoadingSpinner from "~/components/shared/UI/LoadingSpinner";
-import { fetchStores } from "~/api/storeService";
+import { fetchStores } from "~/services/storeService";
 import TableStoreItems from "~/components/shared/tables/TableStoreItems";
 
 const { Option } = Select;

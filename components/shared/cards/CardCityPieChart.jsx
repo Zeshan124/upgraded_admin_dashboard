@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
 import dynamic from "next/dynamic";
 import useSWR from "swr";
-import { CitySource } from "~/api/analyticsService";
+import { CitySource } from "~/services/analyticsService";
 
 const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 

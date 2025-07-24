@@ -5,7 +5,7 @@ import useSWR from 'swr';
 
 import ErrorBoundary from '~/components/utils/ErrorBoundary';
 import Link from 'next/link'
-import { fetchAllPages } from '~/api/PagesServices';
+import { fetchAllPages } from '~/services/PagesServices';
 import LoadingSpinner from "../UI/LoadingSpinner";
 const TableCustomPagesItems = () => {
   

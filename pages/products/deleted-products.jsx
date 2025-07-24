@@ -5,7 +5,7 @@ import TableProductItems from "~/components/shared/tables/TableProductItems";
 import HeaderDashboard from "~/components/shared/headers/HeaderDashboard";
 import ErrorBoundary from "~/components/utils/ErrorBoundary";
 import LoadingSpinner from "~/components/shared/UI/LoadingSpinner";
-import { fetchDeletedProducts } from "~/api/productService";
+import { fetchDeletedProducts } from "~/services/productService";
 
 const DeletedProducts = () => {
     const { data: productData, error, isLoading } = useSWR(

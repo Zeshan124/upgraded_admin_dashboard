@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { Table } from 'antd';
-import { mostPurchaseProduct } from '~/api/analyticsService';
+import { mostPurchaseProduct } from '~/services/analyticsService';
 import useSWR from 'swr';
 import { SWROnceFetchSetting } from '~/util';
 import ChangeInValuesPercent from '~/components/elements/basic/ChangeInValuesPercent';

@@ -11,13 +11,13 @@ import ModuleHomeCategories from "~/components/partials/homeweb/ModuleHomeCatego
 import TableSliderItems from "~/components/shared/tables/TableSliderItems";
 import FormCreateSlider from "~/components/shared/forms/FormCreateSlider";
 import ErrorBoundary from "~/components/utils/ErrorBoundary";
-import { getCategoryById } from "~/api/categoryService";
-import { fetchProductFeatureCategories } from "~/api/productService";
+import { getCategoryById } from "~/services/categoryService";
+import { fetchProductFeatureCategories } from "~/services/productService";
 import LoadingSpinner from "~/components/shared/UI/LoadingSpinner";
 import useSWR from "swr";
 import useCategories from "~/components/hooks/useCategories";
 import useMessageHandler from "~/components/hooks/useMessageHandler";
-import { addProductFeature } from "~/api/productService";
+import { addProductFeature } from "~/services/productService";
 
 const HomePage = () => {
   const dispatch = useDispatch();

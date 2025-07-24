@@ -1,6 +1,6 @@
 import { Select, Spin } from "antd";
 import { useState } from "react";
-import { SapItemLookup } from "~/api/OMSService";
+import { SapItemLookup } from "~/services/OMSService";
 
 
 export default function SearchItemCode({ onSelect }) {

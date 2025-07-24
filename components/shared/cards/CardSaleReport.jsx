@@ -5,8 +5,8 @@ import { DatePicker, Space, Spin } from 'antd';
 const Chart = dynamic(() => import('react-apexcharts'), { ssr: false });
 
 import useSWR from 'swr';
-import { getOrderCount } from '~/api/orderService';
-import { fetchDeliveredOrders } from '~/api/OMSService';
+import { getOrderCount } from '~/services/orderService';
+import { fetchDeliveredOrders } from '~/services/OMSService';
 import Cookies from 'js-cookie';
 
 

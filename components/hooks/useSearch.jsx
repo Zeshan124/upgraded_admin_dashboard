@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { searchUser } from "~/api/userService";
+import { searchUser } from "~/services/userService";
 import useDebounce from '~/components/hooks/useDebounce'
 const useSearch = (searchAPI, token="") => {
     const [searchKeyword, setSearchKeyword] = useState("");

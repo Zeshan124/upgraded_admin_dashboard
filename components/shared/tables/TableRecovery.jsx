@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { Table } from 'antd';
-import { fetchInstallementReceived } from '~/api/OMSService';
+import { fetchInstallementReceived } from '~/services/OMSService';
 import useSWR from 'swr';
 import { convertValue, formatCurrency, getCurrencySymbol, SWROnceFetchSetting } from '~/util';
 import ChangeInValuesPercent from '~/components/elements/basic/ChangeInValuesPercent';

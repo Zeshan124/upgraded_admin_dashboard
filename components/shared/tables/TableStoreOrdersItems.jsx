@@ -5,7 +5,7 @@ import Link from "next/link";
 import useMessageHandler from "~/components/hooks/useMessageHandler";
 import ErrorBoundary from "~/components/utils/ErrorBoundary";
 
-import {  updateStoreOrdersStatus, updateStoreProductStatus } from "~/api/storeService";
+import {  updateStoreOrdersStatus, updateStoreProductStatus } from "~/services/storeService";
 
 
 

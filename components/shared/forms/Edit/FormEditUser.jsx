@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import ContainerDefault from '~/components/layouts/ContainerDefault';
 import HeaderDashboard from '~/components/shared/headers/HeaderDashboard';
 import { connect, useSelector } from 'react-redux';
-import { updateUser, getUserDetails } from '~/api/userService';
+import { updateUser, getUserDetails } from '~/services/userService';
 import useMessageHandler from '~/components/hooks/useMessageHandler';
 import ErrorBoundary from '~/components/utils/ErrorBoundary';
 import LoadingSpinner from '~/components/shared/UI/LoadingSpinner';

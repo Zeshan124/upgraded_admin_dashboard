@@ -6,7 +6,7 @@ import { toggleDrawerMenu } from "~/store/app/action";
 import ContainerDefault from "~/components/layouts/ContainerDefault";
 import HeaderDashboard from "~/components/shared/headers/HeaderDashboard";
 import ErrorBoundary from "~/components/utils/ErrorBoundary";
-import { sendNotification } from "~/api/services";
+import { sendNotification } from "~/services/services";
 import useProducts from "~/components/hooks/useProducts";
 import useCategories from "~/components/hooks/useCategories";
 

@@ -8,7 +8,7 @@ import { toggleDrawerMenu } from "~/store/app/action";
 
 
 import { useRouter } from "next/router";
-import { fetchBlogPressById } from "~/api/pressBlogServive";
+import { fetchBlogPressById } from "~/services/pressBlogServive";
 import FormBlogPress from "~/components/shared/forms/FormBlogPress";
 
 

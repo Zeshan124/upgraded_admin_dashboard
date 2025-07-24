@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
-import { deleteUser } from '~/api/userService';
+import { deleteUser } from '~/services/userService';
 
 import DropdownAction from '~/components/elements/basic/DropdownAction';
 import useMessageHandler from '~/components/hooks/useMessageHandler';

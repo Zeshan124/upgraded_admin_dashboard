@@ -10,8 +10,8 @@ import router, { useRouter } from "next/router";
 import Link from "next/link";
 import useSWR from "swr";
 
-import axiosInstance from "~/api/axiosInstance";
-import { deleteProduct, getProductById } from "~/api/productService";
+import axiosInstance from "~/services/axiosInstance";
+import { deleteProduct, getProductById } from "~/services/productService";
 import { formatDate, getImageURL, placeHolderImage } from "~/util";
 import LoadingSpinner from "~/components/shared/UI/LoadingSpinner";
 import ErrorBoundary from "~/components/utils/ErrorBoundary";

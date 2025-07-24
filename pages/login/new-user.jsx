@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { useRouter } from "next/router";
 import { useSelector } from "react-redux";
 import { message } from "antd";
-import { firstLoginChangePassword } from "~/api/userService";
+import { firstLoginChangePassword } from "~/services/userService";
 import Cookies from "js-cookie";
 import { decryptData, encryptData, isDataMatching } from "~/components/utils/crypto";
 import LoadingSpinner from "~/components/shared/UI/LoadingSpinner";

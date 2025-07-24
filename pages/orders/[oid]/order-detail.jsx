@@ -7,7 +7,7 @@ import { connect, useDispatch } from 'react-redux';
 import { toggleDrawerMenu } from '~/store/app/action';
 import useSWR from "swr";
 import { useRouter } from 'next/router';
-import { getOrderById } from '~/api/orderService';
+import { getOrderById } from '~/services/orderService';
 import LoadingSpinner from '~/components/shared/UI/LoadingSpinner';
 
 // const orders = [

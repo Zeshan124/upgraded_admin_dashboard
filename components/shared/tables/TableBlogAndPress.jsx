@@ -3,11 +3,11 @@ import useSWR from "swr";
 import DropdownAction from "~/components/elements/basic/DropdownAction";
 import ErrorBoundary from "~/components/utils/ErrorBoundary";
 import Link from "next/link";
-import { fetchAllWebPages, deleteWebPage } from "~/api/PagesServices";
+import { fetchAllWebPages, deleteWebPage } from "~/services/PagesServices";
 import LoadingSpinner from "../UI/LoadingSpinner";
 import useMessageHandler from "~/components/hooks/useMessageHandler";
 import { useRouter } from "next/router";
-import { deletePage, fetchAllBlogs } from "~/api/pressBlogServive";
+import { deletePage, fetchAllBlogs } from "~/services/pressBlogServive";
 const TableBlogAndPress = ({ blog }) => {
   const router = useRouter();
   const { showSuccess, showError, contextHolder } = useMessageHandler();

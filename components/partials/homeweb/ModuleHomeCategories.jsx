@@ -5,7 +5,7 @@ const { Search } = Input;
 import { UploadOutlined, DeleteOutlined } from '@ant-design/icons';
 import { Modal, Button, Upload } from 'antd';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
-import { addProductFeature, fetchProductFeatureCategories, getFeaturedProductsBySlug, searchProducts, updateProductFeature } from '~/api/productService';
+import { addProductFeature, fetchProductFeatureCategories, getFeaturedProductsBySlug, searchProducts, updateProductFeature } from '~/services/productService';
 import useSearch from '~/components/hooks/useSearch';
 import LoadingSpinner from '~/components/shared/UI/LoadingSpinner';
 import useMessageHandler from '~/components/hooks/useMessageHandler';

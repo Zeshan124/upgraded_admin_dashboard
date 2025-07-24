@@ -1,13 +1,13 @@
 import { Dropdown, Menu, Modal, Select } from "antd";
 import React, { useState } from "react";
 import Link from "next/link";
-import { deleteProduct } from "~/api/productService";
+import { deleteProduct } from "~/services/productService";
 import { formatDate, getImageURL, placeHolderImage, toTitleCase } from "~/util";
 import LoadingSpinner from "../UI/LoadingSpinner";
 import useMessageHandler from "~/components/hooks/useMessageHandler";
 import ErrorBoundary from "~/components/utils/ErrorBoundary";
 import DeleteButton from "../UI/DeleteButton";
-import { deleteStore, updateStoreStatus } from "~/api/storeService";
+import { deleteStore, updateStoreStatus } from "~/services/storeService";
 
 const onImageError = (e) => {
     e.target.src = placeHolderImage

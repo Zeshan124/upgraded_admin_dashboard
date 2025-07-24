@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import Cookies from 'universal-cookie';
-import { loginUser } from '~/api/userService';
+import { loginUser } from '~/services/userService';
 
 import { loginSuccess } from '~/store/auth/action';
 

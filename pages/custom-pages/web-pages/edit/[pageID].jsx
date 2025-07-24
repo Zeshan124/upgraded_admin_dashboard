@@ -6,7 +6,7 @@ import HeaderDashboard from "~/components/shared/headers/HeaderDashboard";
 import { connect, useDispatch } from "react-redux";
 import { toggleDrawerMenu } from "~/store/app/action";
 import { Select } from "antd";
-import { fetchSingleWebPage } from "~/api/PagesServices";
+import { fetchSingleWebPage } from "~/services/PagesServices";
 import FormWebPage from "~/components/shared/forms/FormWebPage";
 import { useRouter } from "next/router";
 const { Option } = Select;

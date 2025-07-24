@@ -1,7 +1,7 @@
 import React from 'react';
 import useSWR from 'swr';
 // import './ExpoStatusCard.scss';
-import { fetchExpodetails } from "~/api/OMSService";
+import { fetchExpodetails } from "~/services/OMSService";
 export default function ExpoRecords({ startDate, endDate }) {
 
   // const data = null

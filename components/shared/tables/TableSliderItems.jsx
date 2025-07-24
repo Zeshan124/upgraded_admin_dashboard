@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import useSWR from 'swr';
-import { deleteSlider, fetchSliders } from '~/api/sliderService';
+import { deleteSlider, fetchSliders } from '~/services/sliderService';
 import { getImageURL, placeHolderImage } from "~/util";
 import LoadingSpinner from '../UI/LoadingSpinner';
 import useMessageHandler from '~/components/hooks/useMessageHandler';

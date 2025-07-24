@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Modal } from 'antd';
 import useSWR from 'swr';
-import { deleteCoupon, getAllCoupons } from '~/api/couponService';
+import { deleteCoupon, getAllCoupons } from '~/services/couponService';
 import { useRouter } from 'next/router';
 import ErrorBoundary from '~/components/utils/ErrorBoundary';
 import useMessageHandler from '~/components/hooks/useMessageHandler';

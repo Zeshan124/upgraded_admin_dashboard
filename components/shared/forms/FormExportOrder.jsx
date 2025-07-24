@@ -5,7 +5,7 @@ import {
     DatePicker,
     Form,
 } from 'antd';
-import { fetchOrdersCSV } from '~/api/orderService';
+import { fetchOrdersCSV } from '~/services/orderService';
 const { RangePicker } = DatePicker;
 const FormExportOrder = ({ open, setOpen }) => {
     const [confirmLoading, setConfirmLoading] = useState(false);

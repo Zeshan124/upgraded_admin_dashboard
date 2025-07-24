@@ -1,7 +1,7 @@
 import { Modal, Button, message, Upload } from 'antd';
 import { UploadOutlined } from '@ant-design/icons';
 import React, { useState } from 'react';
-import { importProductCSV } from '~/api/productService';
+import { importProductCSV } from '~/services/productService';
 
 const FormImportProducts = ({ open, setOpen }) => {
     const [confirmLoading, setConfirmLoading] = useState(false);

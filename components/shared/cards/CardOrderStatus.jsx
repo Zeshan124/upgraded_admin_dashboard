@@ -1,7 +1,7 @@
 import React from "react";
 import useSWR from "swr";
 
-import { fetchOrderStatusWise } from "../../../api/OMSService";
+import { fetchOrderStatusWise } from "../../../services/OMSService";
 
 const determineClassAndIcon = (difference) => {
     // Parse the percentage value

@@ -3,7 +3,7 @@ import dynamic from 'next/dynamic';
 const Chart = dynamic(() => import('react-apexcharts'), { ssr: false });
 import moment from 'moment';
 import useSWR from 'swr';
-import { OrderSource } from '~/api/analyticsService';
+import { OrderSource } from '~/services/analyticsService';
 import { DatePicker, Space } from 'antd';
 import ChangeInValuesPercent from '~/components/elements/basic/ChangeInValuesPercent';
 const { RangePicker } = DatePicker;

@@ -2,9 +2,9 @@ import axios from 'axios';
 import { useState } from 'react';
 import { Select, Button } from 'antd';
 import useSWR from 'swr';
-import { fetchStores } from '~/api/storeService';
-import { MarketPlaceVendorOrders } from '~/api/analyticsService';
-import { fetchVendorOrdersExport } from '~/api/OMSService';
+import { fetchStores } from '~/services/storeService';
+import { MarketPlaceVendorOrders } from '~/services/analyticsService';
+import { fetchVendorOrdersExport } from '~/services/OMSService';
 import ChangeInValuesPercent from '~/components/elements/basic/ChangeInValuesPercent';
 
 const { Option } = Select;

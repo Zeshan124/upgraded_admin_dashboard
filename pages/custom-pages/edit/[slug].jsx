@@ -5,7 +5,7 @@ import { connect, useDispatch } from "react-redux";
 import { toggleDrawerMenu } from "~/store/app/action";
 import FormPage from "~/components/shared/forms/FormPage";
 import { useRouter } from "next/dist/client/router";
-import { fetchSinglePage } from "~/api/PagesServices";
+import { fetchSinglePage } from "~/services/PagesServices";
 const CustomEditPagesPage = () => {
   const dispatch = useDispatch();
   const [pageData, setPageData] = useState(null);

@@ -1,5 +1,5 @@
 import useSWR from "swr";
-import { fetchTotalInstallementReceived, fetchUnpostedSAP, SaleRecords } from "~/api/OMSService";
+import { fetchTotalInstallementReceived, fetchUnpostedSAP, SaleRecords } from "~/services/OMSService";
 import StatCard from "~/components/shared/cards/StatCard";
 
 const intialCards = {

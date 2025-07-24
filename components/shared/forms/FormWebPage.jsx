@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Editor from "~/components/shared/UI/Editor";
-import { WebAddPage, UpdateWebPage } from "~/api/PagesServices";
+import { WebAddPage, UpdateWebPage } from "~/services/PagesServices";
 import useMessageHandler from "~/components/hooks/useMessageHandler";
 import ErrorBoundary from "~/components/utils/ErrorBoundary";
 import { Spin, Upload, Select, Radio, Input } from "antd";

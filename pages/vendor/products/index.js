@@ -14,7 +14,7 @@ import LoadingSpinner from "~/components/shared/UI/LoadingSpinner";
 import TableVendorProductItems from "~/components/shared/tables/TableVendorProductItems";
 import CardTabs from "~/components/shared/UI/CardTabs";
 import { serializeQuery } from "~/repositories/Repository";
-import { getStoresProducts, getStoresProductsCount } from "~/api/storeService";
+import { getStoresProducts, getStoresProductsCount } from "~/services/storeService";
 import { status, toTitleCase } from "~/util";
 const { Option } = Select;
 

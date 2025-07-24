@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Table } from 'antd';
 import Fuse from 'fuse.js';
-import { TopCategory } from '~/api/OMSService';
+import { TopCategory } from '~/services/OMSService';
 import useSWR from 'swr';
 import DifferenceBadge from '../UI/DifferenceBadge';
 

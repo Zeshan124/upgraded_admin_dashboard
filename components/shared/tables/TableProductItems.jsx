@@ -1,7 +1,7 @@
 import { Dropdown, Menu } from "antd";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { deleteProduct } from "~/api/productService";
+import { deleteProduct } from "~/services/productService";
 import { formatDate, getImageURL, placeHolderImage, toTitleCase } from "~/util";
 import LoadingSpinner from "../UI/LoadingSpinner";
 import useMessageHandler from "~/components/hooks/useMessageHandler";

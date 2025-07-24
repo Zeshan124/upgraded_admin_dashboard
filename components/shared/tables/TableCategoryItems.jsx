@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Badge, Dropdown, Table, Modal } from 'antd';
 import useSWR, { mutate } from "swr";
-import { deleteCategory, fetchAllCategories, updateCategory } from "~/api/categoryService";
-import { deleteSubCategory, fetchAllSubCategories, updateSubCategory } from "~/api/subCategoryService";
+import { deleteCategory, fetchAllCategories, updateCategory } from "~/services/categoryService";
+import { deleteSubCategory, fetchAllSubCategories, updateSubCategory } from "~/services/subCategoryService";
 import { getImageURL, placeHolderImage } from "~/util";
 import DropdownAction from "~/components/elements/basic/DropdownAction";
 

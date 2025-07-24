@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import useSWR from 'swr';
 import { Tooltip } from 'antd'; // This was missing in your import
-import { CreditCheckCount } from '~/api/analyticsService';
-import { fetchOrderByCreditStatus } from '~/api/OMSService';
+import { CreditCheckCount } from '~/services/analyticsService';
+import { fetchOrderByCreditStatus } from '~/services/OMSService';
 import { toTitleCase } from '~/util';
 
 const fetcherCC = async ([url, startDate, endDate]) => (await CreditCheckCount(url, startDate, endDate));

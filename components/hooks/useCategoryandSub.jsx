@@ -1,5 +1,5 @@
 import useSWR from 'swr';
-import { fetchProductCategories } from '~/api/categoryService';
+import { fetchProductCategories } from '~/services/categoryService';
 
 
 function useCategoryandSub(initialCategory = []) {

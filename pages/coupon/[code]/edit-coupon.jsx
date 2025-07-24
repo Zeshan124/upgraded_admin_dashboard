@@ -11,10 +11,10 @@ import { TimePicker, DatePicker } from 'antd';
 import moment from 'moment';
 
 
-import { fetchAllCategories } from "~/api/categoryService";
-import { fetchAllSubCategories } from "~/api/subCategoryService";
-import { fetchAllProducts } from "~/api/productService";
-import { addCoupon, getCouponByCode, updateCoupon } from "~/api/couponService";
+import { fetchAllCategories } from "~/services/categoryService";
+import { fetchAllSubCategories } from "~/services/subCategoryService";
+import { fetchAllProducts } from "~/services/productService";
+import { addCoupon, getCouponByCode, updateCoupon } from "~/services/couponService";
 import useSWR from "swr";
 import { useRouter } from "next/router";
 import useMessageHandler from "~/components/hooks/useMessageHandler";

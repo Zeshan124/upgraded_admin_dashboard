@@ -9,10 +9,10 @@ import { Controller, useForm, useFieldArray } from "react-hook-form";
 import { Select } from "antd";
 import { TimePicker, DatePicker } from "antd";
 
-import { fetchAllCategories } from "~/api/categoryService";
-import { fetchAllSubCategories } from "~/api/subCategoryService";
-import { fetchAllProducts } from "~/api/productService";
-import { addCoupon } from "~/api/couponService";
+import { fetchAllCategories } from "~/services/categoryService";
+import { fetchAllSubCategories } from "~/services/subCategoryService";
+import { fetchAllProducts } from "~/services/productService";
+import { addCoupon } from "~/services/couponService";
 import useSWR from "swr";
 import useProducts from "~/components/hooks/useProducts";
 import useCategories from "~/components/hooks/useCategories";

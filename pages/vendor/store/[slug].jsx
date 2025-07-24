@@ -7,7 +7,7 @@ import useSWR from "swr";
 import { useRouter } from 'next/router';
 
 import LoadingSpinner from '~/components/shared/UI/LoadingSpinner';
-import { fetchStoreBySlug } from '~/api/storeService';
+import { fetchStoreBySlug } from '~/services/storeService';
 import { getImageURL, getStatusLabel } from '~/util';
 
 

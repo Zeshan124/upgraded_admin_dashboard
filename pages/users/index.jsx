@@ -11,7 +11,7 @@ import Link from "next/link";
 const { Option } = Select;
 
 import useSWR from "swr";
-import { getAllUsersPagination, searchUser } from "~/api/userService";
+import { getAllUsersPagination, searchUser } from "~/services/userService";
 import ErrorBoundary from "~/components/utils/ErrorBoundary";
 import LoadingSpinner from "~/components/shared/UI/LoadingSpinner";
 import useSearch from "~/components/hooks/useSearch";

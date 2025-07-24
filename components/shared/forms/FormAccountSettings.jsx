@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
-import { getUserDetails, updateUser } from '~/api/userService';
+import { getUserDetails, updateUser } from '~/services/userService';
 import LoadingSpinner from '../UI/LoadingSpinner';
 import useSWR from 'swr';
 

@@ -12,9 +12,9 @@ import TableAreaItems from "~/components/shared/tables/TableAreaItems";
 import FormCreateAreaCity from "~/components/shared/forms/FormCreateAreaCity";
 
 import { toTitleCase } from "~/util";
-import { fetchCities } from "~/api/cityService";
+import { fetchCities } from "~/services/cityService";
 
-import axiosInstance from "~/api/axiosInstance";
+import axiosInstance from "~/services/axiosInstance";
 import ErrorBoundary from "~/components/utils/ErrorBoundary";
 import LoadingSpinner from "~/components/shared/UI/LoadingSpinner";
 

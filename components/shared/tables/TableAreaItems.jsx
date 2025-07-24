@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { formatDate, toTitleCase } from '~/util';
 import DropdownAction from '~/components/elements/basic/DropdownAction';
 import { Modal, Select } from 'antd';
-import { deleteArea, fetchAllAreas, updateArea } from '~/api/areaService';
+import { deleteArea, fetchAllAreas, updateArea } from '~/services/areaService';
 import useSWR from 'swr';
 import useMessageHandler from '~/components/hooks/useMessageHandler';
 import ErrorBoundary from '~/components/utils/ErrorBoundary';

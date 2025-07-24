@@ -7,7 +7,7 @@ import { Select } from "antd";
 import Link from "next/link";
 const { Option } = Select;
 
-import { addUser, getAllUsers } from "~/api/userService";
+import { addUser, getAllUsers } from "~/services/userService";
 
 import ErrorBoundary from "~/components/utils/ErrorBoundary";
 import useMessageHandler from "~/components/hooks/useMessageHandler";

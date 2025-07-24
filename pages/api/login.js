@@ -1,7 +1,7 @@
 // pages/api/login.js
 
-import { loginOMS } from "~/api/OMSService";
-import { loginUser } from "~/api/userService";
+import { loginOMS } from "~/services/OMSService";
+import { loginUser } from "~/services/userService";
 import CryptoJS from "crypto-js";
 
 const SECRET_KEY = process.env.MAGIC_LINK_SECRET_KEY; 

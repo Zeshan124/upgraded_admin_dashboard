@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import useSWR from "swr";
-import { fetchOrdersReport } from "~/api/orderService";
+import { fetchOrdersReport } from "~/services/orderService";
 import moment from "moment";
 import { Space, DatePicker } from "antd";
-import { CreditCheckCount } from "~/api/analyticsService";
+import { CreditCheckCount } from "~/services/analyticsService";
 import { toTitleCase } from "~/util";
 const { RangePicker } = DatePicker;
 

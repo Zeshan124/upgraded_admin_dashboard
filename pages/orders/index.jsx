@@ -7,7 +7,7 @@ import { Select, Pagination } from "antd";
 import HeaderDashboard from "~/components/shared/headers/HeaderDashboard";
 import { connect, useDispatch } from "react-redux";
 import { toggleDrawerMenu } from "~/store/app/action";
-import { getAllOrdersPaginate, searchOrder } from "~/api/orderService";
+import { getAllOrdersPaginate, searchOrder } from "~/services/orderService";
 // import useSWR from 'swr';
 import useSearch from "~/components/hooks/useSearch";
 import LoadingSpinner from "~/components/shared/UI/LoadingSpinner";

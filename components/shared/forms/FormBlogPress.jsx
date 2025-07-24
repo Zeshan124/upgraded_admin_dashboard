@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Editor from "~/components/shared/UI/Editor";
-import { WebAddPage, UpdateWebPage } from "~/api/PagesServices";
+import { WebAddPage, UpdateWebPage } from "~/services/PagesServices";
 import useMessageHandler from "~/components/hooks/useMessageHandler";
 import ErrorBoundary from "~/components/utils/ErrorBoundary";
 import { Spin, Upload, Select, Radio, Input } from "antd";
@@ -8,7 +8,7 @@ import { useForm, Controller } from "react-hook-form";
 
 import { getImageURL } from "~/util";
 import { useRouter } from "next/router";
-import { AddPressBlog, UpdatePressBlog } from "~/api/pressBlogServive";
+import { AddPressBlog, UpdatePressBlog } from "~/services/pressBlogServive";
 
 const initialData = {
   title: "",

@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { Card, Empty, Spin, Alert, Badge } from 'antd';
 import { TrophyOutlined } from '@ant-design/icons';
 import useSWR from 'swr';
-import { getOrderArea } from '~/api/orderService';
+import { getOrderArea } from '~/services/orderService';
 import { toTitleCase, SWROnceFetchSetting } from '~/util';
 import ChangeInValuesPercent from '~/components/elements/basic/ChangeInValuesPercent';
 

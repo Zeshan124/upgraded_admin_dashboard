@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Card, Table, Empty, Tooltip, Input } from 'antd';
 import { ShopOutlined, SearchOutlined, InfoCircleOutlined } from '@ant-design/icons';
 import useSWR from 'swr';
-import { fetchBranchSalesSap } from '~/api/OMSService';
+import { fetchBranchSalesSap } from '~/services/OMSService';
 import { convertValue, formatCurrency, getCurrencySymbol, SWROnceFetchSetting } from '~/util';
 import ChangeInValuesPercent from '~/components/elements/basic/ChangeInValuesPercent';
 import { useSelector } from 'react-redux';

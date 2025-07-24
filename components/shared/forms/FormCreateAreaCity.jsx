@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import useSWR from 'swr';
-import { addArea, fetchAllAreas } from '~/api/areaService';
-import { addCity } from '~/api/cityService';
+import { addArea, fetchAllAreas } from '~/services/areaService';
+import { addCity } from '~/services/cityService';
 import useMessageHandler from '~/components/hooks/useMessageHandler';
 import ErrorBoundary from '~/components/utils/ErrorBoundary';
 import { toTitleCase } from '~/util';

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { Dropdown, Menu, Modal } from "antd";
 import useSWR from 'swr';
-import { getAllOrders } from "~/api/orderService";
+import { getAllOrders } from "~/services/orderService";
 import { formatDate } from "~/util";
 
 
