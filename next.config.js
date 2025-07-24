@@ -20,11 +20,7 @@ const nextConfig = {
   // Enhanced experimental settings
   experimental: {
     esmExternals: false, // Keep false for better compatibility
-    outputFileTracing: true, // Enable better file tracing
   },
-
-  // Output configuration to prevent service files from being treated as serverless functions
-  output: 'standalone',
 
   // Enhanced webpack configuration
   webpack: (config, { isServer, dev }) => {
@@ -48,25 +44,6 @@ const nextConfig = {
       };
     }
 
-    // Server-side configuration to exclude service files from being treated as API routes
-    if (isServer) {
-      // Add webpack rule to ignore service files in root api/ directory
-      config.module = config.module || {};
-      config.module.rules = config.module.rules || [];
-      
-      // Ignore all service files in root api/ directory
-      config.module.rules.push({
-        test: /^(?!.*pages\/api).*\/api\/.*Service\.js$/,
-        use: 'ignore-loader'
-      });
-
-      // Also ignore axiosInstance files
-      config.module.rules.push({
-        test: /\/api\/axiosInstance\.js$/,
-        use: 'ignore-loader'
-      });
-    }
-
     // Better module resolution
     config.resolve.extensions = [".js", ".jsx", ".ts", ".tsx", ".json"];
 
@@ -75,23 +52,7 @@ const nextConfig = {
       config.cache = false;
     }
 
-    // Ignore service files in the build process for serverless function detection
-    config.ignoreWarnings = [
-      /.*Service\.js/,
-      /axiosInstance\.js/
-    ];
-
     return config;
-  },
-
-  // Serverless function configuration
-  serverRuntimeConfig: {
-    // Only these should be treated as serverless functions
-    apiRoutes: [
-      '/api/analytics',
-      '/api/login', 
-      '/api/sendNotification'
-    ]
   },
 
   // Image configuration
@@ -108,12 +69,6 @@ const nextConfig = {
 
   // Disable strict mode temporarily to avoid double rendering issues
   reactStrictMode: false,
-
-  // Additional configuration to prevent false serverless function detection
-  pageExtensions: ['js', 'jsx', 'ts', 'tsx'],
-  
-  // Exclude patterns that should not be treated as API routes
-  excludeDefaultMomentLocales: true,
 };
 
 module.exports = nextConfig;
