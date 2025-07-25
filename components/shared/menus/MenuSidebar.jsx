@@ -20,11 +20,11 @@ const MenuSidebar = () => {
       url: "/products",
       icon: "icon-database",
     },
-    {
-      text: "Orders",
-      url: "/orders",
-      icon: "icon-bag2",
-    },
+    // {
+    //   text: "Orders",
+    //   url: "/orders",
+    //   icon: "icon-bag2",
+    // },
     {
       text: "Users",
       url: "/users",
@@ -96,7 +96,6 @@ const MenuSidebar = () => {
       url: "/settings",
       icon: "icon-cog", // Keeping the same icon for Settings
     },
-
   ];
 
   const filteredMenuItems = menuItems.filter((item) =>
