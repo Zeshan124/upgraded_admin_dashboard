@@ -23,7 +23,7 @@ import useSWR from "swr";
 
 
 const { Option } = Select;
-const ProductPage = ({ category: initialCategory=[], product: initialProduct=[] }) => {
+const ProductPage = ({ category: initialCategory, product: initialProduct }) => {
   const itemsPerPage = 15;  
   const [pageIndex, setPageIndex] = useState(1);
   
@@ -195,29 +195,29 @@ const ProductPage = ({ category: initialCategory=[], product: initialProduct=[] 
   );
 };
 
-// export async function getStaticProps() {
-//   try {
-//     const categoryData = await fetchProductCategories();
-//     const subCategory = await fetchAllSubCategories();
-//     const productData = await fetchProductsPaginate(`?_start=${1}&_limit=${15}`);
-//     return {
-//       props: {
-//         category: categoryData,
-//         subCategory: subCategory,
-//         product: productData,
-//       },
-//     };
-//   } catch (error) {
-//     console.error('Error fetching data:', error);
-//     return {
-//       props: {
-//         category: [],
-//         subCategory: [],
-//         product: [],
-//       },
-//     };
-//   }
-// }
+export async function getStaticProps() {
+  try {
+    const categoryData = await fetchProductCategories();
+    const subCategory = await fetchAllSubCategories();
+    const productData = await fetchProductsPaginate(`?_start=${1}&_limit=${15}`);
+    return {
+      props: {
+        category: categoryData,
+        subCategory: subCategory,
+        product: productData,
+      },
+    };
+  } catch (error) {
+    console.error('Error fetching data:', error);
+    return {
+      props: {
+        category: [],
+        subCategory: [],
+        product: [],
+      },
+    };
+  }
+}
 
 
 export default connect((state) => state.app)(ProductPage);
